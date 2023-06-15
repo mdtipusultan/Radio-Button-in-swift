@@ -83,7 +83,7 @@
                                     <view tag="101" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B6D-xn-bQE" userLabel="passive">
                                         <rect key="frame" x="0.0" y="0.0" width="314" height="160"/>
                                         <subviews>
-                                            <button opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h0g-bC-Kq6">
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h0g-bC-Kq6">
                                                 <rect key="frame" x="10" y="48" width="64" height="64"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="64" id="620-zN-1QS"/>
@@ -91,6 +91,9 @@
                                                 </constraints>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" image="check-box"/>
+                                                <connections>
+                                                    <action selector="buttonTapped:" destination="ahG-J7-4qI" eventType="touchUpInside" id="52o-vl-vBP"/>
+                                                </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Option A" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="7EW-ho-tcp">
                                                 <rect key="frame" x="100" y="67.333333333333343" width="87" height="25.666666666666671"/>
@@ -114,7 +117,7 @@
                                     <view tag="101" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pDt-g5-afh" userLabel="passive2">
                                         <rect key="frame" x="0.0" y="160" width="314" height="160"/>
                                         <subviews>
-                                            <button opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5qV-OL-DVs">
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5qV-OL-DVs">
                                                 <rect key="frame" x="10" y="48" width="64" height="64"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="64" id="6H4-Y2-yCd"/>
@@ -122,6 +125,9 @@
                                                 </constraints>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" image="check-box-empty"/>
+                                                <connections>
+                                                    <action selector="buttonTapped:" destination="ahG-J7-4qI" eventType="touchUpInside" id="2QG-ju-faJ"/>
+                                                </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Option B" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="LGL-Iw-pGH">
                                                 <rect key="frame" x="100" y="67.333333333333314" width="87.666666666666686" height="25.666666666666671"/>
@@ -145,7 +151,7 @@
                                     <view tag="101" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Spo-1Y-YjT" userLabel="passive3">
                                         <rect key="frame" x="0.0" y="320" width="314" height="160"/>
                                         <subviews>
-                                            <button opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6HG-pc-YT9">
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6HG-pc-YT9">
                                                 <rect key="frame" x="10" y="48" width="64" height="64"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="64" id="mYd-QF-QRQ"/>
@@ -153,6 +159,9 @@
                                                 </constraints>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" image="check-box-empty"/>
+                                                <connections>
+                                                    <action selector="buttonTapped:" destination="ahG-J7-4qI" eventType="touchUpInside" id="JMs-Rp-4fk"/>
+                                                </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Option C" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="3nZ-DN-4MP">
                                                 <rect key="frame" x="100" y="67.333333333333314" width="88.666666666666686" height="25.666666666666671"/>
@@ -181,6 +190,7 @@
                                 </constraints>
                             </stackView>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="KGJ-tO-nd0"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="Elg-Uc-PDe" secondAttribute="trailing" constant="20" id="eJJ-zg-4oh"/>
@@ -189,6 +199,11 @@
                             <constraint firstAttribute="height" secondItem="Elg-Uc-PDe" secondAttribute="height" multiplier="697/480" id="tIZ-lb-4Ge"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="buttonA" destination="h0g-bC-Kq6" id="wAH-bx-4LA"/>
+                        <outlet property="buttonB" destination="5qV-OL-DVs" id="IdI-Su-cB4"/>
+                        <outlet property="buttonC" destination="6HG-pc-YT9" id="zV9-wB-5v1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vc0-0g-RXq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -208,7 +223,7 @@
                                     <view tag="101" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SLU-Zh-c0k" userLabel="passive">
                                         <rect key="frame" x="0.0" y="0.0" width="314" height="160"/>
                                         <subviews>
-                                            <button opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xGm-e4-wm2">
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xGm-e4-wm2">
                                                 <rect key="frame" x="10" y="48" width="64" height="64"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="64" id="Hfh-m9-WJY"/>
@@ -241,7 +256,7 @@
                                     <view tag="101" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XVP-0d-nPb" userLabel="passive2">
                                         <rect key="frame" x="0.0" y="160" width="314" height="160"/>
                                         <subviews>
-                                            <button opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mjN-bD-lS7">
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mjN-bD-lS7">
                                                 <rect key="frame" x="10" y="48" width="64" height="64"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="64" id="tZy-hr-b7Z"/>
@@ -274,7 +289,7 @@
                                     <view tag="101" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RpK-CI-gdZ" userLabel="passive3">
                                         <rect key="frame" x="0.0" y="320" width="314" height="160"/>
                                         <subviews>
-                                            <button opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jPm-SK-jDb">
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jPm-SK-jDb">
                                                 <rect key="frame" x="10" y="48" width="64" height="64"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="64" id="GcB-RY-ws3"/>
@@ -312,6 +327,7 @@
                                 </constraints>
                             </stackView>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="pY5-Pa-sLc"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="GP9-AG-piJ" secondAttribute="trailing" constant="20" id="ILj-hO-sJC"/>
@@ -328,7 +344,7 @@
     </scenes>
     <resources>
         <image name="check-box" width="170.66667175292969" height="170.66667175292969"/>
-        <image name="check-box-empty" width="512" height="512"/>
+        <image name="check-box-empty" width="170.66667175292969" height="170.66667175292969"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
