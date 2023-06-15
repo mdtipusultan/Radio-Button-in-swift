@@ -13,6 +13,8 @@
 		E81415342A3A75F400F6D0DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E81415322A3A75F400F6D0DC /* Main.storyboard */; };
 		E81415362A3A75F600F6D0DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E81415352A3A75F600F6D0DC /* Assets.xcassets */; };
 		E81415392A3A75F600F6D0DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E81415372A3A75F600F6D0DC /* LaunchScreen.storyboard */; };
+		E81415412A3A89B800F6D0DC /* checkBoxVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81415402A3A89B800F6D0DC /* checkBoxVC.swift */; };
+		E81415432A3A89CC00F6D0DC /* RadioButtonVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81415422A3A89CC00F6D0DC /* RadioButtonVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		E81415352A3A75F600F6D0DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E81415382A3A75F600F6D0DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E814153A2A3A75F600F6D0DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E81415402A3A89B800F6D0DC /* checkBoxVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = checkBoxVC.swift; sourceTree = "<group>"; };
+		E81415422A3A89CC00F6D0DC /* RadioButtonVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioButtonVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,11 +62,13 @@
 			children = (
 				E814152C2A3A75F400F6D0DC /* AppDelegate.swift */,
 				E814152E2A3A75F400F6D0DC /* SceneDelegate.swift */,
-				E81415302A3A75F400F6D0DC /* ViewController.swift */,
 				E81415322A3A75F400F6D0DC /* Main.storyboard */,
 				E81415352A3A75F600F6D0DC /* Assets.xcassets */,
 				E81415372A3A75F600F6D0DC /* LaunchScreen.storyboard */,
 				E814153A2A3A75F600F6D0DC /* Info.plist */,
+				E81415302A3A75F400F6D0DC /* ViewController.swift */,
+				E81415402A3A89B800F6D0DC /* checkBoxVC.swift */,
+				E81415422A3A89CC00F6D0DC /* RadioButtonVC.swift */,
 			);
 			path = "Radio-Button";
 			sourceTree = "<group>";
@@ -141,6 +147,8 @@
 				E81415312A3A75F400F6D0DC /* ViewController.swift in Sources */,
 				E814152D2A3A75F400F6D0DC /* AppDelegate.swift in Sources */,
 				E814152F2A3A75F400F6D0DC /* SceneDelegate.swift in Sources */,
+				E81415432A3A89CC00F6D0DC /* RadioButtonVC.swift in Sources */,
+				E81415412A3A89B800F6D0DC /* checkBoxVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
