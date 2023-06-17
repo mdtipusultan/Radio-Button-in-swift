@@ -336,6 +336,11 @@
                             <constraint firstItem="GP9-AG-piJ" firstAttribute="top" secondItem="eax-LI-5Sh" secondAttribute="top" constant="100" id="inw-Gm-qZg"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="buttonOne" destination="xGm-e4-wm2" id="HWM-6h-vTy"/>
+                        <outlet property="buttonThree" destination="jPm-SK-jDb" id="rti-cx-TF8"/>
+                        <outlet property="buttonTwo" destination="mjN-bD-lS7" id="FWL-jg-NJn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ppv-I6-pRa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
